@@ -1,0 +1,49 @@
+.carousel{
+    overflow: hidden;
+    max-width: 60vw;
+    position: relative;
+}
+
+.carousel .carousel-item, .carousel .carousel-item-hidden{
+    display:none;
+}
+
+.carousel .carousel-item img{
+    max-width: 40vw;
+    width:100%;
+    height: cover;
+    margin-top: 10%;
+    transform: translateY(10%) ;
+    }
+
+.carousel .carousel-item-visible{
+    display: block;
+}
+
+/* this adjusts the next and previous buttons */
+.carousel .carousel-actions{
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%); /*places the buttons more centrally */
+}
+
+.carousel .carousel-actions i{
+    font-size: 2rem ;
+    cursor: pointer;
+}
+
+
+.carousel .carousel-actions button{
+    height: 3rem;
+    width: 2.5rem;
+}
+.carousel .carousel-actions button#carousel-btn-next{
+    margin-right: 1rem;
+}
+
+.carousel .carousel-actions button#carousel-btn-prev{
+    margin-left: 1rem;
+}
